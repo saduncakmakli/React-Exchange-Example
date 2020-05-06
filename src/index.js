@@ -52,6 +52,7 @@ class Main extends React.Component {
 
   handleOnMouseMove(event) {
     if (this.Mouse.tranferIsActive === true) {
+
       const Statement = Object.assign({}, this.state);
       const MouseMovement = { x: (event.clientX - this.Mouse.clientX), y: (event.clientY - this.Mouse.clientY) };
 
@@ -60,14 +61,24 @@ class Main extends React.Component {
         case "Market":
           Statement.ComponentStyle.Location.Market.left += MouseMovement.x;
           Statement.ComponentStyle.Location.Market.top += MouseMovement.y;
-          this.Mouse.clientX = event.clientX;
-          this.Mouse.clientY = event.clientY;
+          break;
+
+        case "Exchange":
+          Statement.ComponentStyle.Location.Exchange.left += MouseMovement.x;
+          Statement.ComponentStyle.Location.Exchange.top += MouseMovement.y;
+          break;
+
+        case "FinancialStatement":
+          Statement.ComponentStyle.Location.FinancialStatement.left += MouseMovement.x;
+          Statement.ComponentStyle.Location.FinancialStatement.top += MouseMovement.y;
           break;
 
         default:
           break;
       }
 
+      this.Mouse.clientX = event.clientX;
+      this.Mouse.clientY = event.clientY;
       this.setState(Statement);
     }
   }

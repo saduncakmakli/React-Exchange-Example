@@ -1,3 +1,12 @@
+html {
+   -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
 .Main {
   border: 3px solid #73AD21;
   position: absolute;
@@ -13,6 +22,7 @@
 .FinancialStatement {
   font: 10px "Comic Sans MS", cursive, sans-serif;
   border: 3px solid #73AD21;
+  background-color: beige;
   position: absolute;
   height: 190px;
   width: 140px;
@@ -20,12 +30,13 @@
 
 .Exchange {
   text-align: right;
-  font: 18px "Comic Sans MS", cursive, sans-serif;
+  font: 17px "Comic Sans MS", cursive, sans-serif;
   border: 3px solid #73AD21;
   position: absolute;
-  margin-top: -6px;
   height: 190px;
   width: 280px;
+  background-color: beige;
+  
 }
 
 .Buy {
@@ -49,6 +60,7 @@
   width: 200px;
   height: 200px;
   border: 3px solid #73AD21;
+  background-color: beige;
 }
 
 .FinancialStatementTable{
