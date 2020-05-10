@@ -1,0 +1,11 @@
+.Game {
+    border: 0.5px solid #73AD21;
+    position: absolute;
+    left: 0.5%;
+    right: 0.5%;
+    top: 0.5%;
+    bottom: 0.5%;
+    min-width: 250px;
+    min-height: 250px;
+    overflow: hidden;
+  }

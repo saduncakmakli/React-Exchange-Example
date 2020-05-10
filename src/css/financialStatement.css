@@ -1,0 +1,51 @@
+.FinancialStatement {
+    font: 10px "Comic Sans MS", cursive, sans-serif;
+    border: 2px solid #73AD21;
+    background-color: beige;
+    position: absolute;
+    height: 190px;
+    width: 140px;
+  }
+
+.FinancialStatementTable {
+    width: 100%;
+}
+
+.FinancialStatementTable tr:nth-child(even) {
+    background-color: #f7fdf5;
+}
+
+.FinancialStatementTable tr:nth-child(odd) {
+    background-color: #dff8d9;
+}
+
+.FinancialStatementTable tr:hover {
+    background-color: #c0c0c0;
+}
+
+.FinancialStatementTable td:nth-child(2) {
+    text-align: left;
+    padding-left: 3px;
+}
+
+.FinancialStatementTable td:nth-child(1) {
+    text-align: center;
+    padding-right: 3px;
+}
+
+.FinancialStatementTable th {
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+}
+
+.FinancialStatementTable th:nth-child(1) {
+    padding-right: 3px;
+    padding-left: 3px;
+}
+
+.FinancialStatementTable th:nth-child(2) {
+    text-align: left;
+    padding-left: 3px;
+    width: 100%;
+}
